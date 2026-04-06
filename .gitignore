@@ -1,0 +1,22 @@
+# Zig build artifacts
+.zig-cache/
+zig-out/
+
+# Development files
+*.md
+!README.md
+!LICENSE
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Temporary files
+*.tmp
+*.log

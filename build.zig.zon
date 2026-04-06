@@ -1,0 +1,27 @@
+.{
+    .name = .c_ares,
+    .version = "1.34.4",
+    .fingerprint = 0x808817710f3af306,
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{
+        .upstream = .{
+            .url = "git+https://github.com/c-ares/c-ares#v1.34.4",
+            .hash = "1220a280253362ec390d3ab38e80ef3428b3e6f428be8db32faa33081c15c500c6ea",
+        },
+        .zig_build_helper = .{
+            .url = "git+https://github.com/thuvasooriya/zig-build-helper.git#main",
+            .hash = "zig_build_helper-0.1.0-R4iqbKZ7AACrLlgp90FWp48lKilvLrSEARt3lPv-SpN2",
+        },
+        .macos_sdk_minimal = .{
+            .url = "git+https://github.com/thuvasooriya/macos-sdk-minimal.git#main",
+            .hash = "macos_sdk_minimal-14.0.0-JZZ_ffLVJQDs_aAb120BPbihFi632dflL_XypwVMdheu",
+            .lazy = true,
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+        "README.md",
+    },
+}
